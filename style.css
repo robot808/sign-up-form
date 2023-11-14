@@ -79,9 +79,10 @@ main {
 section {
   flex: 1;
   min-height: 200px;
-  padding: 40px 20px;
+  padding: 35px 50px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   background-color: #f9fafb;
 }
 
@@ -90,10 +91,31 @@ section {
 }
 
 section > h2 {
-  margin: 1em;
-  margin-top: 0;
+  margin-bottom: 1.2em;
 }
 
 form {
   flex: 0 0 300px;
+}
+
+section > button {
+  padding: .75em 3em;
+  border: none;
+  border-radius: 10px;
+  background-color: #596d4b;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+section > p {
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+
+section > p > a {
+  color: #596d4b;
+  font-weight: bold;
+  text-decoration: none;
 }
