@@ -79,7 +79,19 @@ main {
 section {
   flex: 1;
   min-height: 200px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
   background-color: #f9fafb;
+}
+
+ section:first-child {
+  justify-content: flex-end;
+}
+
+section > h2 {
+  margin: 1em;
+  margin-top: 0;
 }
 
 form {
