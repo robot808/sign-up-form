@@ -5,9 +5,10 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  border: none;
+  font-family: Helvetica, sans-serif;
 }
 
 html {
@@ -56,14 +57,14 @@ img.logo {
 
 header h1 {
   font-family: "Norse-Bold";
-  font-size: 6em;
+  font-size: 6rem;
   font-weight: normal;
 }
 
 header > p {
-  margin: 1em;
+  margin: 1rem;
   margin-top: auto;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 header a {
@@ -78,7 +79,7 @@ main {
 
 section {
   flex: 1;
-  min-height: 200px;
+  min-height: auto;
   padding: 35px 50px;
   display: flex;
   flex-direction: column;
@@ -91,27 +92,60 @@ section {
 }
 
 section > h2 {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.25rem;
 }
 
 form {
   flex: 0 0 300px;
+  z-index: 1;
+  padding: 20px 50px;
+  color: #2a333f;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+form > div {
+  display: flex;
+  width: 80%;
+  gap: 50px;
+}
+
+form ul {
+  flex: 1;
+  list-style: none;
+}
+
+form li {
+  margin-top: 1.25rem;
+}
+
+form label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+input {
+  appearance: none;
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
 }
 
 section > button {
-  padding: .75em 3em;
+  padding: 1rem 3rem;
   border: none;
   border-radius: 10px;
   background-color: #596d4b;
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.125rem;
   font-weight: bold;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 section > p {
-  margin-top: 2em;
-  font-size: 1.2em;
+  margin-top: 2rem;
+  font-size: 1.25rem;
 }
 
 section > p > a {
