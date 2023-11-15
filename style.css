@@ -151,6 +151,20 @@ input:invalid + span::after {
   text-transform: none;
 }
 
+input[type="email"].populated:invalid + span::after {
+  content: "*Invalid email address";
+}
+
+input[type="password"].nomatch + span::after {
+  content: "*Passwords do not match";
+  position: absolute;
+  top: 52px;
+  left: 0px;
+  color: #bb0000;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
 input:focus {
   border-color: #0000ff;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
