@@ -117,6 +117,7 @@ div.row > label {
 }
 
 form label {
+  position: relative;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -128,6 +129,8 @@ input {
   padding: 0.5rem;
   border: 1px solid #e5e7eb;
   border-radius: 5px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 input:empty {
@@ -135,7 +138,17 @@ input:empty {
 }
 
 input:invalid {
-  border-color: #ff0000;
+  border-color: #bb0000;
+}
+
+input:invalid + span::after {
+  content: "*Required";
+  position: absolute;
+  top: 52px;
+  left: 0px;
+  color: #bb0000;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 input:focus {
